@@ -46,14 +46,14 @@ export default function Hands({keyValue, playerName, result}){
 
     return <>
         <div className="flex w-full justify-center items-center " >
-            <div className="flex justify-center w-1/2" ><img className="w-48" src={sign1Svg} /></div>
-            <div className="flex justify-center w-1/2" ><img className="w-48"  src={sign2Svg} /></div>
+            <div className="flex justify-center w-1/2" ><img className="w-48" src={sign1Svg} alt="rockpaperscissor" /></div>
+            <div className="flex justify-center w-1/2" ><img className="w-48"  src={sign2Svg} alt="rockpaperscissor" /></div>
         </div>
         <div className="flex justify-center flex-col items-center gap-5" >
             <h1 className="text-center text-4xl font-medium font-sans bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-800 text-transparent" >
                 {resultText}
             </h1>
-            {winner !== "draw" && <img className="w-10" src={trophyImg} />}
+            {winner !== "draw" && <img className="w-10" src={trophyImg} alt="rockpaperscissor"/>}
         </div>
       
         

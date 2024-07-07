@@ -10,19 +10,19 @@ export default function PlayerResult({name,win, loss, draw}){
                 <h1 className="text-center max-w-full text-slate-100 text-sm sm:text-lg">{nameToShow}</h1>
                 <div className="min flex gap-2 justify-between " >
                     <h2 className="text-green-400 w-1/3" >Win</h2>
-                    <img className="w-5" src={winImg} />
+                    <img className="w-5" src={winImg} alt="total-matches-won" />
                     <h2 className="text-green-400" >:</h2>
                     <h2 className="text-green-400" >{win}</h2>
                 </div>  
                 <div className="min-w-fit flex gap-2 justify-between" >
                     <h2 className="text-red-400 w-1/3" >Loss</h2>
-                    <img className="w-5" src={lossImg} />
+                    <img className="w-5" src={lossImg} alt="total-matches-loss" />
                     <h2 className="text-green-400" >:</h2>
                     <h2 className="text-red-400" >{loss}</h2>
                 </div>
                 <div className="min-w-fit flex gap-2 justify-between" >
                     <h2 className="text-cyan-400 w-1/3" >Draw</h2>
-                    <img className="w-5" src={drawImg} />
+                    <img className="w-5" src={drawImg} alt="total-matches-draw" />
                     <h2 className="text-green-400" >:</h2>
                     <h2 className="text-cyan-400" >{draw}</h2>
                 </div>
