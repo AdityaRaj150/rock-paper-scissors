@@ -41,7 +41,7 @@ export default function Hands({keyValue, playerName, result}){
     else {
         resultText = `${playerName['2']} Won!`
     }
-    console.log(winner)
+   
     const res = useMemo(() => result(winner), [keyValue])
 
     return <>
