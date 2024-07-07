@@ -18,7 +18,7 @@ export default function PlayerResult({name,win, loss, draw}){
                     <h2 className="text-red-400" >{loss}</h2>
                 </div>
                 <div className="min-w-fit flex gap-2 justify-between" >
-                    <h2 className="text-cyan-400 w-1/3" >Draw:</h2>
+                    <h2 className="text-cyan-400 w-1/3" >Draw</h2>
                     <img className="w-5" src={drawImg} />
                     <h2 className="text-green-400" >:</h2>
                     <h2 className="text-cyan-400" >{draw}</h2>

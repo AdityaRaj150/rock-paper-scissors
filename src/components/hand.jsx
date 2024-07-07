@@ -44,19 +44,19 @@ export default function Hands({keyValue, playerName, result}){
     console.log(winner)
     const res = useMemo(() => result(winner), [keyValue])
 
-    return <div className="flex flex-col gap-10 w-full">
+    return <>
         <div className="flex w-full justify-center items-center " >
             <div className="flex justify-center w-1/2" ><img className="w-48" src={sign1Svg} /></div>
             <div className="flex justify-center w-1/2" ><img className="w-48"  src={sign2Svg} /></div>
         </div>
         <div className="flex justify-center flex-col items-center gap-5" >
-            <h1 className="text-center text-4xl text-cyan-600" >
+            <h1 className="text-center text-4xl font-medium font-sans bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-800 text-transparent" >
                 {resultText}
             </h1>
             {winner !== "draw" && <img className="w-10" src={trophyImg} />}
         </div>
       
         
-    </div>
+    </>
     
 }

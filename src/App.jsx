@@ -41,7 +41,7 @@ export default function App(){
 
   }
   return <>
-    <h1 className="text-center my-20 text-5xl bg-clip-text bg-gradient-to-r from-cyan-300 to-blue-800 text-transparent" >Rock, paper, Scissors</h1>
+    <h1 className="text-center my-20 font-sans font-medium text-5xl bg-clip-text bg-gradient-to-r from-cyan-600 to-blue-800 text-transparent" >Rock, paper, Scissors</h1>
     <div className="w-fit m-auto">
     <section className="flex items-center flex-col min-[810px]:flex-row justify-center gap-10 my-20" >
     <Player playerName={playersName['1']} playerNumber="1" changePlayerName={handlePlayerNameChange} />
